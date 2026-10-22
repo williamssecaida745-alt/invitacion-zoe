@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5adce1">
+  <meta name="description" content="Acompáñanos a celebrar los 6 añitos de Zoé.">
+  <title>¡Zoé cumple 6! 💗🩵</title>
+  <style>
+    :root { --aqua:#59dce1; --aqua-dark:#22bfc9; --pink:#ffacd0; --pink-dark:#ef79ad; --ink:#45515e; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+      padding:28px 16px; color:var(--ink); font-family: "Trebuchet MS", Arial, sans-serif;
+      background: radial-gradient(circle at 12% 15%, #ffe1ef 0 8%, transparent 8.5%),
+                  radial-gradient(circle at 88% 80%, #d9fbfc 0 10%, transparent 10.5%),
+                  linear-gradient(145deg,#fff9fc,#f0ffff);
+      overflow-x:hidden;
+    }
+    .sparkle { position:fixed; pointer-events:none; z-index:0; animation: float 6s ease-in-out infinite; opacity:.7; }
+    .s1 { top:8%; left:7%; color:var(--pink-dark); font-size:30px; }
+    .s2 { top:18%; right:8%; color:var(--aqua-dark); font-size:25px; animation-delay:1.3s; }
+    .s3 { bottom:12%; left:10%; color:var(--aqua-dark); font-size:24px; animation-delay:2s; }
+    .s4 { bottom:9%; right:11%; color:var(--pink-dark); font-size:32px; animation-delay:.7s; }
+    .card {
+      position:relative; z-index:1; width:min(100%,560px); text-align:center; overflow:hidden;
+      border:3px solid #b7f3f4; border-radius:30px; background:rgba(255,255,255,.94);
+      box-shadow:0 18px 55px rgba(74,190,198,.18); padding:28px 24px 30px;
+    }
+    .topline { text-transform:uppercase; letter-spacing:3px; font-size:.76rem; font-weight:800; color:#e36da4; }
+    h1 { margin:8px 0 0; font-size:clamp(3rem,12vw,5.2rem); line-height:1; color:var(--aqua-dark); text-shadow:3px 3px 0 #b5f4f5; }
+    .age { display:inline-block; margin:12px 0 4px; padding:7px 18px; border-radius:999px; color:#fff; background:linear-gradient(90deg,var(--pink-dark),var(--aqua-dark)); font-weight:800; }
+    .hero { display:block; width:100%; max-width:460px; max-height:440px; object-fit:contain; margin:12px auto 4px; border-radius:18px; }
+    .invite { font-size:1.12rem; line-height:1.6; margin:12px auto 18px; max-width:400px; }
+    .details { display:grid; gap:10px; margin:18px auto; max-width:390px; text-align:left; }
+    .detail { display:flex; align-items:center; gap:12px; padding:12px 15px; background:#f4ffff; border:1px solid #d4f7f7; border-radius:16px; }
+    .detail:nth-child(2) { background:#fff5fa; border-color:#ffe0ed; }
+    .emoji { font-size:1.5rem; width:32px; text-align:center; }
+    .detail strong { display:block; color:#3c6670; font-size:.78rem; text-transform:uppercase; letter-spacing:1px; }
+    .detail span:last-child { font-weight:700; }
+    .footer { margin:18px 0 0; color:#d9639a; font-weight:800; font-size:1.05rem; }
+    .heart { position:fixed; bottom:-40px; z-index:0; opacity:.5; animation: rise 9s linear infinite; }
+    .heart:nth-of-type(5) { left:20%; animation-delay:1s; }
+    .heart:nth-of-type(6) { left:72%; animation-delay:4s; }
+    @keyframes float { 0%,100%{transform:translateY(0) rotate(-5deg)} 50%{transform:translateY(-13px) rotate(7deg)} }
+    @keyframes rise { from{transform:translateY(0) scale(.8); opacity:0} 15%{opacity:.55} to{transform:translateY(-115vh) scale(1.25); opacity:0} }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation:none !important; scroll-behavior:auto !important; } }
+    @media (max-width:420px) { .card{padding:23px 15px 25px;border-radius:24px} .hero{max-height:350px} .invite{font-size:1rem} }
+  </style>
+</head>
+<body>
+  <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div>
+  <div class="sparkle s3">✦</div><div class="sparkle s4">✧</div>
+  <div class="heart" style="left:35%;animation-delay:2.4s;color:#ff9ec7;font-size:25px">♥</div>
+  <div class="heart" style="left:84%;animation-delay:5.5s;color:#4bd4dc;font-size:30px">♥</div>
+  <main class="card">
+    <div class="topline">¡Una celebración muy especial!</div>
+    <h1>Zoé</h1>
+    <div class="age">¡Cumple 6 añitos!</div>
+    <img class="hero" src="stitch-angel-zoe.png" alt="Stitch y Angel celebrando juntos">
+    <p class="invite">¡Estás invitado a compartir una tarde llena de alegría, abrazos y mucha diversión para celebrar el cumpleaños de Zoé! 💗🩵</p>
+    <section class="details" aria-label="Detalles de la celebración">
+      <div class="detail"><span class="emoji">📅</span><span><strong>Fecha</strong>Domingo, 25 de octubre de 2026</span></div>
+      <div class="detail"><span class="emoji">🕑</span><span><strong>Hora</strong>2:00 p. m.</span></div>
+      <div class="detail"><span class="emoji">📍</span><span><strong>Lugar</strong>Salón Comunal Casa Blanca</span></div>
+    </section>
+    <p class="footer">¡Te esperamos para celebrar juntos! ✨</p>
+  </main>
+</body>
+</html>
